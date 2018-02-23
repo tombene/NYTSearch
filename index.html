@@ -6,7 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<!-- bootstrap CDN -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	 crossorigin="anonymous">
 	<!-- External CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<!-- jQuery CDN -->
@@ -16,42 +17,48 @@
 
 <body>
 	<div class="container">
+
 		<div class="jumbotron">
 			<h1 class="text-center">New York Times Search</h1>
 		</div>
-		<form class="border rounded">
-			<div class="form-group">
-				<label for="exampleFormControlInput1">Search Parameters</label>
-				<input type="" class="form-control" id="exampleFormControlInput1" placeholder="">
+
+		<div class="panel panel-default">
+			<div class="panel-heading">Search Parameters</div>
+			<div class="panel-body">
+				<form>
+					<div class="form-group">
+						<label for="exampleFormControlInput1">Search Term:</label>
+						<input type="" class="form-control" id="exampleFormControlInput1" placeholder="">
+					</div>
+					<div class="form-group">
+						<label for="exampleFormControlSelect1">Number of Records to Retrieve:</label>
+						<select class="form-control" id="exampleFormControlSelect1">
+							<option>1</option>
+							<option>5</option>
+							<option>10</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="exampleFormControlTextarea1">Start Year (Optional):</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+					</div>
+					<div class="form-group">
+						<label for="exampleFormControlTextarea1">End Year (Optional):</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+					</div>
+					<button type="button" class="btn btn-primary btn-lg">Search</button>
+					<button type="button" class="btn btn-primary btn-lg">Clear Results</button>
+				</form>
 			</div>
-			<div class="form-group">
-				<label for="exampleFormControlSelect1">Number of Records to Retrieve:</label>
-				<select class="form-control" id="exampleFormControlSelect1">
-					<option>1</option>
-					<option>5</option>
-					<option>10</option>
-				</select>
-			</div>
-			<div class="form-group">
-					<label for="exampleFormControlTextarea1">Start Year (Optional):</label>
-					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-				</div>
-			<div class="form-group">
-				<label for="exampleFormControlTextarea1">End Year (Optional):</label>
-				<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-			</div>
-			<button type="button" class="btn btn-secondary btn-lg">Large button</button>
-			<button type="button" class="btn btn-secondary btn-lg">Large button</button>
-		</form>
-
-			<div class="panel panel-default">
-				<div class="panel-heading">panel heading</div>
-				<div class="panel-body">panel body</div>
-
-
-
 		</div>
+	
+	<div class="panel panel-default">
+		<div class="panel-heading">Top Articles</div>
+		<div class="panel-body"></div>
 	</div>
+
+	</div>
+
 
 
 	<script type="text/javascript" src="assets/javascript/nytsearch.js"></script>
